@@ -6,7 +6,7 @@ Designed with a modern dark-neon aesthetic, smooth animations, and responsive UI
 ---
 
 ## 🌌 Live Preview
-🔗 **Portfolio:** https://your-portfolio-link.vercel.app  
+🔗 **Portfolio:** https://ai-portfolio-5bccsc88j-tech-team3.vercel.app  
 🔗 **LeetCode:** https://leetcode.com/u/yaminikhurana2001/
 
 ---
