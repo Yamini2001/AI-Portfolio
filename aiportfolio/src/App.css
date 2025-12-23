@@ -1,10 +1,14 @@
+/* Root Container */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #432ad1; /* Dark portfolio background */
+  color: #ffffff; /* Default text color */
 }
 
+/* Logo */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -12,12 +16,13 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cffaa); /* soft purple glow */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #7ee0ffaa); /* cyan glow */
 }
 
+/* Logo spinning animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +38,38 @@
   }
 }
 
+/* Card */
 .card {
   padding: 2em;
+  background: #0b0015; /* dark card background */
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(126, 224, 255, 0.2); /* soft blue-purple shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(126, 224, 255, 0.4);
 }
 
+/* Paragraph / Docs Links */
 .read-the-docs {
-  color: #888;
+  color: #888888; /* light gray */
+  transition: color 0.3s ease;
+}
+.read-the-docs:hover {
+  color: #7ee0ff; /* cyan highlight on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  .logo {
+    height: 4em;
+    padding: 1rem;
+  }
+  .card {
+    padding: 1.5em;
+  }
 }
