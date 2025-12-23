@@ -85,13 +85,13 @@ export default function About() {
 
               <SkillBadge
                 icon={<Code2 size={18} />}
-                text="Python Enthusiast"
+                text="React Developer"
                 gradient="from-yellow-400 to-orange-400"
               />
 
               <SkillBadge
                 icon={<Atom size={18} />}
-                text="React Developer"
+                text="Python Enthusiast"
                 gradient="from-cyan-400 to-blue-400"
               />
 

@@ -65,7 +65,7 @@ export default function Navbar() {
               href="/FullStack Developer Yamini Resume.pdf"
               download
               className="relative group overflow-hidden px-7 py-3 rounded-full
-                         border border-white/60 bg-purple-500/15
+                         border border-white/60 bg-teal-300/15
                          text-[10px] font-black uppercase tracking-[0.3em] text-white
                          transition-all duration-300
                          hover:-translate-y-0.5

@@ -3,28 +3,28 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "AI Travel Planner",
+    title: "AI Trip Planner",
     description:
-      "An AI-powered travel planner using Gemini AI to generate personalized itineraries.",
-    tech: ["React", "Gemini AI", "Firebase"],
+      "An AI-powered travel planning application that generates personalized itineraries using Gemini AI, featuring secure authentication and a responsive modern UI.",
+    tech: ["React", "Gemini AI", "Firebase", "Tailwind CSS"],
     live: "#",
-    github: "#",
+    github: "https://github.com/Yamini2001/AI-Trip-Planner",
   },
   {
-    title: "AI Portfolio",
+    title: "AI Portfolio — Yamini Khurana",
     description:
-      "A futuristic analytics dashboard with real-time data visualization.",
-    tech: ["React", "Tailwind", "Charts"],
-    live: "#",
-    github: "#",
+      "A futuristic, animated, and performance-optimised AI portfolio website showcasing skills, projects, and experience with a dark-neon UI, smooth animations, and fully responsive design.",
+    tech: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Vercel"],
+    live: "https://ai-portfolio-ko0argk79-tech-team3.vercel.app/",
+    github: "https://github.com/Yamini2001/AI-Portfolio",
   },
   {
-    title: "Lead Management System",
+    title: "LogicLoom — Visual Pipeline DAG Validator",
     description:
-      "Full-stack lead management app with authentication and CRUD operations.",
-    tech: ["MERN", "MySQL", "Express"],
-    live: "#",
-    github: "#",
+      "A visual workflow builder that allows users to create, visualize, and validate node-based pipelines, ensuring they form a valid Directed Acyclic Graph (DAG) using real-time cycle detection.",
+    tech: ["React", "React Flow", "FastAPI", "Python", "Zustand"],
+    live: "https://logicloom-di5f1do37-tech-team3.vercel.app",
+    github: "https://github.com/Yamini2001/LogicLoom-Visual-Pipeline-DAG-Validator",
   },
 ];
 
@@ -75,9 +75,7 @@ export default function Projects() {
               <div className="absolute -inset-1 rounded-[30px] bg-gradient-to-r from-purple-600 to-cyan-400 blur opacity-0 group-hover:opacity-30 transition duration-700" />
 
               <div className="relative flex flex-col h-full">
-                <h3 className="text-xl font-bold mb-3">
-                  {project.title}
-                </h3>
+                <h3 className="text-xl font-bold mb-3">{project.title}</h3>
 
                 <p className="text-gray-400 text-sm leading-relaxed mb-6">
                   {project.description}
@@ -127,6 +125,23 @@ export default function Projects() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* View All Button */}
+        <div className="mt-20 flex justify-center">
+          <a
+            href="https://github.com/Yamini2001"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 px-8 py-4 rounded-2xl
+                       bg-white/10 border border-white/20 backdrop-blur-xl
+                       text-white font-semibold
+                       hover:bg-white/20 hover:scale-105
+                       transition-all duration-300"
+          >
+            <Github className="group-hover:rotate-12 transition" size={20} />
+            View All Projects
+          </a>
         </div>
       </div>
     </section>
